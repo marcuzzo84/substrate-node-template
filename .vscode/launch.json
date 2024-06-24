@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Substrate Node",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/target/release/node-template",
+        "args": ["--dev"],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": "cargo build --release",
+        "sourceLanguages": ["rust"],
+        "env": {
+          "RUST_LOG": "debug",
+          "RUST_BACKTRACE": "1",
+          "LIBCLANG_PATH": "C:/Program Files/LLVM/bin"
+        },
+        "terminal": "integrated"
+      }
+    ]
+  }
+  
